@@ -1,3 +1,2 @@
-// Fill these in to collect real replies. Leave both settings empty to store replies in your browser.
-export const supabaseUrl = "";
-export const supabasePublishableKey = "";
+export const supabaseUrl = "https://tdfggleuvupillujqdty.supabase.co";
+export const supabasePublishableKey = "sb_publishable_bG2FCfxilY6KRr9prLdjvQ_KzqvVTFj";

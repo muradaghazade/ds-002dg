@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fceaf1">
+  <title>A little date? ♡</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./invite.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><span class="brand-heart" aria-hidden="true">♥</span> A little date?</header>
+    <article class="paper invite">
+      <section id="welcome">
+        <div class="art" aria-hidden="true">
+          <span class="spark one">✦</span><span class="spark two">✧</span><span class="spark three">✦</span>
+          <span class="tiny-heart">♡</span>
+          <div class="envelope"><div class="letter"><span>♥</span></div><div class="fold"></div><div class="seal">♥</div></div>
+        </div>
+        <h1>Would you go on<br>a <em>date</em> with me?</h1>
+        <p class="intro">You pick the plan. I’ll be there. ♡</p>
+        <div class="answers">
+          <button type="button" id="yes" class="primary">Yes, of course! <span aria-hidden="true">♡</span></button>
+          <div class="no-slot"><button type="button" id="no" class="secondary">No</button></div>
+        </div>
+      </section>
+      <form id="planner" hidden>
+        <button type="button" id="back" class="text-button">← Back</button>
+        <section id="activity-step">
+          <h1 tabindex="-1">What sounds <em>fun?</em></h1>
+          <p class="intro">Pick what you’d like us to do together.</p>
+          <div class="activities">
+            <button type="button" data-activity="cinema"><span aria-hidden="true">🎬</span>Cinema<i aria-hidden="true">→</i></button>
+            <button type="button" data-activity="food"><span aria-hidden="true">🍝</span>Food<i aria-hidden="true">→</i></button>
+            <button type="button" data-activity="coffee"><span aria-hidden="true">☕</span>Coffee<i aria-hidden="true">→</i></button>
+          </div>
+        </section>
+        <section id="detail-step" hidden>
+          <h1 tabindex="-1" id="detail-heading"></h1>
+          <div id="detail-field" class="field"></div>
+          <button class="primary wide">Pick a date <span aria-hidden="true">→</span></button>
+        </section>
+        <section id="date-step" hidden>
+          <h1 tabindex="-1">When are you <em>free?</em></h1>
+          <p class="plan" id="plan"></p>
+          <fieldset id="calendar" class="calendar">
+            <legend class="sr-only">Choose our date</legend>
+            <div class="calendar-nav">
+              <button type="button" id="previous-month" aria-label="Previous month">‹</button>
+              <h2 id="calendar-month" aria-live="polite"></h2>
+              <button type="button" id="next-month" aria-label="Next month">›</button>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+            </div>
+            <div id="calendar-days" class="calendar-days" role="group" aria-labelledby="calendar-month"></div>
+            <p id="calendar-selection" class="calendar-selection" aria-live="polite">Choose a day</p>
+          </fieldset>
+          <button class="primary wide" id="send">Send my reply <span aria-hidden="true">♡</span></button>
+          <p role="status" class="status" id="submit-status"></p>
+        </section>
+      </form>
+      <section id="outcome" hidden>
+        <div class="big-heart" aria-hidden="true">♥</div>
+        <h1 tabindex="-1" id="outcome-title"></h1>
+        <p class="intro" id="outcome-message"></p>
+        <p class="plan" id="outcome-plan" hidden></p>
+      </section>
+    </article>
+    <footer>With love, always <span aria-hidden="true">♡</span></footer>
+  </main>
+</body>
+</html>
